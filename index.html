@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST COUNTRIES APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+      <div class="logo">
+        <h1>Where in the world?</h1>
+      </div>
+      <div class="theme-mode">
+        <button class="btn-toggle">
+          <i class="fa-regular fa-moon"></i> Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="search-container">
+        <div class="text-search">
+          <i class="fa-icon fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search for a country..."
+            class="input-search-style"
+            id="input-search"
+          />
+        </div>
+        <div class="filter-search">
+          <i class="fa-icon-2 fa-solid fa-circle-chevron-down"></i>
+          <select id="filter-region">
+            <option selected hidden>Filter by Region</option>
+            <option value="All">All</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+      <section class="country-container"></section>
+      <section class="modal-container"></section>
+    </main>
+
+    <script src="app.js"></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a97ef9e5a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
